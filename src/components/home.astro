@@ -2,13 +2,19 @@
 import LetterGlitch from "../React/LetterGlitch.tsx";
 import LogoWall from "../components/logoWall.astro";
 import SkillsList from "../React/SkillsList.tsx";
+
+const linkedInUrl = "https://www.linkedin.com/in/dave-hyacinthe";
+const githubUrl = "https://github.com/DaveHya";
+const emailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=davesteban6@gmail.com&su=Hey%20Dave!";
 ---
+
+
 
 <section class="text-[var(--white)] mt-12 md:mt-0" id="home">
   <div class="max-w-5xl mx-auto space-y-8 md:py-36 pb-14">
     <div class="text-left space-y-4">
       <p class="text-md md:text-lg text-[var(--white-icon)] shiny-white">
-        Hi, I'm Oscar Hernandez
+        Hi, I'm Dave Hyacinthe
       </p>
       <div
         class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-8 md:gap-4"
@@ -28,7 +34,7 @@ import SkillsList from "../React/SkillsList.tsx";
       <div class="flex justify-start gap-2 pt-3 md:pt-6">
         <a
           target="_blank"
-          href="https://github.com/gothsec"
+          href={githubUrl}
           aria-label="GitHub"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -45,7 +51,7 @@ import SkillsList from "../React/SkillsList.tsx";
         </a>
         <a
           target="_blank"
-          href="https://linkedin.com/in/hernandezoscar-dev"
+          href={linkedInUrl}
           aria-label="LinkedIn"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -62,7 +68,7 @@ import SkillsList from "../React/SkillsList.tsx";
         </a>
         <a
           target="_blank"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=oscarandreshernandezpineda@gmail.com&su=Hey%20Oscar!"
+          href={emailUrl}
           aria-label="Email"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -83,7 +89,7 @@ import SkillsList from "../React/SkillsList.tsx";
 
     <LogoWall />
 
-    <div class="flex flex-col lg:flex-row items-center gap-8">
+    <!-- <div class="flex flex-col lg:flex-row items-center gap-8">
       <SkillsList client:load />
       <div
         class="flex justify-center md:w-full md:h-[292px] size-[290px] pt-3 md:pt-9 md:ml-16"
@@ -97,7 +103,7 @@ import SkillsList from "../React/SkillsList.tsx";
           smooth={true}
         />
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
